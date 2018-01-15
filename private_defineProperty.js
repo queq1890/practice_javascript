@@ -16,7 +16,7 @@ function Triangle() {
         }
       }
     }
-  };
+  );
 
   Object.defineProperty(
     this,
@@ -25,13 +25,13 @@ function Triangle() {
       get: function() {
         return _height;
       },
-      set: function(base) {
+      set: function(height) {
         if (typeof height === 'number' && height > 0 ) {
           _height = height;
         }
       }
     }
-  };
+  );
 }
 
 
@@ -46,4 +46,4 @@ t.height = 2;
 
 console.log('三角形の底辺' + t.base);
 console.log('三角形の高さ' + t.height);
-console.log('三角形の面積' + t.getArea);
+console.log('三角形の面積' + t.getArea());
