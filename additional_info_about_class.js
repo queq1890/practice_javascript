@@ -1,4 +1,5 @@
 //クラスの継承
+//superで継承
 class Member {
   constructor(firstName, lastName) {
     this.firstName = firstName;
